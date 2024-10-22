@@ -1,0 +1,103 @@
+:root {
+  /* ## Colors */
+  /* ### Primary */
+  --tomato: #ff6257;
+
+  /* ### Neutral */
+  --dark-slate-grey: #242742;
+  --charcoal-grey: #36384e;
+  --grey: #9294a0;
+  --white: #ffffff;
+
+  /* ### Others */
+  --pink: #ff527b;
+  --orange: #ff7a4f;
+
+  /* ## Fonts */
+  --font: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: var(--charcoal-grey);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: var(--white);
+    display: flex;
+    width: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 2em;
+  }
+
+  .image {
+    background: url(../images/illustration-sign-up-desktop.svg) no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 549px;
+    border-radius: 1em;
+  }
+
+  .form {
+    width: 460px;
+    padding: 2.5em;
+  }
+
+  .form h1 {
+    font-size: 3.5rem;
+  }
+
+  input[type='email']:hover {
+    border-color: var(--dark-slate-grey);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-image: linear-gradient(to right, var(--pink), var(--orange));
+    box-shadow: 0em .5em 1em #ff7b4f65;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .success-submit {
+    width: 450px;
+    background-color: var(--white);
+    padding: 3em;
+    border-radius: 2em;
+  }
+
+  .success-submit img {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  .success-submit h2 {
+    font-size: 3.25em;
+    line-height: 1em;
+    margin-bottom: .1em;
+  }
+
+  .success-submit p {
+    font-size: .95rem;
+    margin-bottom: 1.5em;
+  }
+
+  .success-submit button {
+    position: relative;
+    width: 100%;
+  }
+} 
