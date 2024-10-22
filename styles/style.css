@@ -22,11 +22,14 @@
 }
 
 body {
-  width: 375px;
   font-family: var(--font);
   font-size: 1rem;
   font-weight: 400;
   margin: auto;
+}
+
+.container {
+  width: 375px;
 }
 
 .image {
@@ -99,7 +102,7 @@ input[type='email'].error-state {
 
 button {
   color: var(--white);
-  background-color: var(--dark-slate-grey);
+  background: var(--dark-slate-grey);
   font-weight: 700;
   padding: 1.3em;
   width: 100%;
@@ -118,6 +121,10 @@ button {
 .success-submit img {
   width: 50px;
   margin: 5em 0 .7em;
+}
+
+.success-submit h2 {
+  font-size: 2em;
 }
 
 .success-submit button {
